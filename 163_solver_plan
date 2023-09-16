@@ -1,0 +1,30 @@
+To solve all possible 163 puzzles (make 163 from 5 numbers in [1,13] with +-*/) efficiently without duplicate equations
+
+lemma: intermediate results as rational functions satisfy
+(1) the numerator and denominator are linear in all variables,
+(2) the coefficients are +-1, and
+(3) they don't share any common terms
+proof: trivial induction
+
+1.
+polynomial handler: represent a polynomial as a bitmask of bitmasks
+to compress a-b+ab: let the term-bitmasks be -1 -> 0, a -> 1, b -> 2, ... so the terms are a (2), -b (5), and ab (6)
+polynomial bitmask is 2^2+2^5+2^6; 5 variables fits perfectly in 2^64
+
+2.
+rational function handler: just store the two polynomials
+all four operations are ridiculously fast with bitwise operators
+
+3.
+for each valid RPN equation (3584 total), for each permutation of variables:
+compute the rational function and normalize the signs
+see which one's result is lexicographically smallest, this rational function is the "canonical form"
+for instance (a-b)*(c-d) and (b-d)*(c-a) have the same canonical form so they're found to be duplicates
+delete duplicates, now there's one copy of each distinct equation
+
+4.
+for each equation and quintuple of unsorted numbers evaluate it
+if 163 then store this string in the answers to the sorted tuple (a big answer table)
+then print them; no duplicate strings or redundant solutions
+
+Actual program will be written later
