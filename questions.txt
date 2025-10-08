@@ -1,0 +1,33 @@
+# 1
+1.  Are the answers to questions 4-6 all the same?
+2.  Is the answer to question 3 the same as that of question 10?
+3.  Are there exactly 5 YES answers?
+4.  Are there 4 consecutive questions with the same answer?
+5.  Is the sum of the indices of the questions with answer YES greater than that of those with answer NO?
+6.  Is this the last question whose answer is YES?
+7.  Are there 4 consecutive questions with alternating answers?
+8.  Is the answer to the next question the same as that of the previous?
+9.  Is this the last question whose answer is YES?
+10. Is the answer to this question YES?
+
+# 2
+1.  Is the answer to question 5 the same as that of question 12?
+2.  Is the number of YES answers even?
+3.  Are there 4 consecutive NO answers?
+4.  Are there 5 consecutive alternating answers?
+5.  Is this the first question whose neighbors have the same answer?
+6.  Are there at least 8 runs of equal answers?
+7.  Is the number of prime numbered questions with answer YES at least
+        4?
+8.  Is there a palindromic substring of the answers with length at
+        least 8?
+9.  Are there more YES answers than NO answers?
+10. Is this the last question with the same answer as its predecessor?
+11. Are there 4 consecutive YES answers?
+12. Is the set of indices of questions with answer YES expressible as
+        S U (S+d) for some nonzero d?
+13. Is this the last question with answer YES?
+14. Does the binary matrix defined by these 15 answers with 0 prepended
+        have rank at most 2?
+15. Is the sum of 2^k over all indices k of questions with answer YES
+        40-smooth?
